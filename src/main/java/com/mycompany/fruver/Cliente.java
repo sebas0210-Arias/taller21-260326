@@ -1,6 +1,6 @@
 
 package com.mycompany.fruver;
-// para github
+//clon
 public class Cliente {
     private String nombre;
     
