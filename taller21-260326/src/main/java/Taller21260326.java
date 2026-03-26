@@ -13,6 +13,18 @@ public class Taller21260326 {
             this.siguiente = null;
         }
     }
+    // clase lista
+    static class Lista{
+        Nodo cabeza;
+        Nodo actual;
+        
+        Lista(){
+            cabeza=null;
+            actual=null;
+        }
+
+         }
+ 
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -21,7 +33,7 @@ public class Taller21260326 {
 
         Nodo cabeza = null;
         Nodo actual = null;  
-        
+      //lista enlazada  
     for( int i=1; i <n-2;i++){
         int num= sc.nextInt();
          Nodo nuevo = new Nodo(num);
