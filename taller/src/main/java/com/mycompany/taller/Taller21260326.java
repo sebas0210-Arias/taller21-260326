@@ -27,6 +27,10 @@ public class Taller21260326 {
         
         int n = sc.nextInt();
         
+        
+        Nodo cabeza = null;
+        Nodo actual = null;
+        
 
         
 
