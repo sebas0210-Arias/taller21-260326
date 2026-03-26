@@ -47,6 +47,7 @@ public class Taller21260326 {
              actual=nuevo;
             
          }
+          long expected = (long) n * (n + 1) / 2;
 
     }
         
