@@ -63,5 +63,6 @@ static class Lista {
         System.out.println(faltante);
     }
 }
+//no inicializa correctamente
         
      
