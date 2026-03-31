@@ -14,17 +14,34 @@ public class Taller21260326 {
         }
     }
     // clase lista
-    static class Lista{
+static class Lista {
         Nodo cabeza;
-        Nodo actual;
-        
-        Lista(){
-            cabeza=null;
-            actual=null;
+        void insertar(int valor) {
+            Nodo nuevo = new Nodo(valor);
+
+            if (cabeza == null) {
+                cabeza = nuevo;
+            } else {
+                Nodo actual = cabeza;
+                while (actual.siguiente != null) {
+                    actual = actual.siguiente;
+                }
+                actual.siguiente = nuevo;
+            }
         }
 
-         }
- 
+        int sumar() {
+            int suma = 0;
+            Nodo actual = cabeza;
+
+            while (actual != null) {
+                suma += actual.valor;
+                actual = actual.siguiente;
+            }
+
+            return suma;
+        }
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
