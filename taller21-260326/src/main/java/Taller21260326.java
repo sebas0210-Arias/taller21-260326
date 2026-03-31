@@ -48,26 +48,20 @@ static class Lista {
 
         int n = sc.nextInt();
 
-        Nodo cabeza = null;
-        Nodo actual = null;  
-      //lista enlazada  
-    for( int i=1; i <n-2;i++){
-        int num= sc.nextInt();
-         Nodo nuevo = new Nodo(num);
-         
-         if(cabeza==null){
-             cabeza=nuevo;
-             actual=nuevo;
-           
-         }else{
-             actual.siguiente=nuevo;
-             actual=nuevo;
-            
-         }
-          long expected = (long) n * (n + 1) / 2;
+        Lista lista = new Lista();
 
-    }
-        
-        
+        // leer n-1 números
+        for (int i = 0; i < n - 1; i++) {
+            lista.insertar(sc.nextInt());
+        }
+        int sumaLista = lista.sumar();
+
+        long sumaTotal = (long) n * (n + 1) / 2;
+
+        long faltante = sumaTotal - sumaLista;
+
+        System.out.println(faltante);
     }
 }
+        
+     
